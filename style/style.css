@@ -2,17 +2,39 @@
   display: none;
 }
 
-.start {
+.start,
+.score {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
   cursor: pointer;
+  z-index: 100;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background: black;
 }
 
-.car, .enemy {
+.score {
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: skyblue;
+}
+
+.car,
+.enemy {
   position: absolute;
   width: 50px;
   height: 100px;
   background: transparent url("../image/player.png") center / cover no-repeat;
-  left: 125px;
-  bottom: 10px;
+  /* left: 125px;
+  bottom: 10px; */
 }
 
 .game-area {
